@@ -52,7 +52,27 @@ Finally, *begin very careful as the below will overwrite the previously existing
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
+See: https://www.reddit.com/r/archlinux/comments/1ds6lbd/nvidianvreg_enablegpufirmware0_improves/ for more
+
+### Audio Codecs (for AMD CPU, NVIDIA GPU)
+
+```
+sudo dnf swap ffmpeg-free ffmpeg --allowerasing
+sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+sudo dnf update @sound-and-video
+sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
+sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
+sudo dnf swap mesa-va-drivers.i686 mesa-va-drivers-freeworld.i686
+sudo dnf swap mesa-vdpau-drivers.i686 mesa-vdpau-drivers-freeworld.i686
+sudo dnf install libva-nvidia-driver
+sudo dnf install libva-nvidia-driver.{i686,x86_64}
+```
+
+See: https://rpmfusion.org/Howto/Multimedia for more
+
 ### Blue Yeti Mic
 
 Had to set the Blue Yeti microphone to `Digital Stereo Duplex (IEC958)` to get this to behave properly.
+
+See: https://www.reddit.com/r/linuxaudio/comments/14i9du1/issue_with_blue_yeti_audio_in_fedora/ for more
 
