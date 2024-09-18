@@ -76,3 +76,10 @@ Had to set the Blue Yeti microphone to `Digital Stereo Duplex (IEC958)` to get t
 
 See: https://www.reddit.com/r/linuxaudio/comments/14i9du1/issue_with_blue_yeti_audio_in_fedora/ for more
 
+Had to set the microphone up like this in `Sound`:
+
+![image](https://github.com/user-attachments/assets/36859800-1911-419d-8d20-cae25c28a860)
+
+Used `PulseAudio` to adjust microphone settings further (volume)
+
+
