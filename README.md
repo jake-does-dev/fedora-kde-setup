@@ -10,7 +10,7 @@ These steps are for Fedora 40 running Plasma 6.1.4
 
 ## Steps
 
-### Propietary NVIDIA Driver
+### Propietary NVIDIA Driver (on 3090)
 
 Check that the propietary NVIDIA driver has been installed - this should have happened alongside the install of Fedora 40:
 ```
