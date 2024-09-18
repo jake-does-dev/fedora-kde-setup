@@ -47,6 +47,11 @@ GRUB_CMDLINE_LINUX="rhgb quiet rd.driver.blacklist=nouveau modprobe.blacklist=no
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia.NVreg_EnableGpuFirmware=0"
 ```
 
+Finally, *begin very careful as the below will overwrite the previously existing GRUB*, regenerate the GRUB via:
+```
+grub2-mkconfig -o /boot/grub2/grub.cfg
+```
+
 ### Blue Yeti Mic
 
 Had to set the Blue Yeti microphone to `Digital Stereo Duplex (IEC958)` to get this to behave properly.
