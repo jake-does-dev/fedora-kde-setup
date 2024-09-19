@@ -89,3 +89,6 @@ Occasionally, `krunner` will crash...
 This workaround will restart `krunner` when it crashes: https://github.com/jake-does-dev/krunner-restarter-fedora
 Forked from: https://github.com/kpostekk/krunner-restarter 
 
+### Amend SDDM (log on behaviours)
+
+`System Settings -> Colors & Themes -> Login Screen (SDDM) -> Behavior...`
