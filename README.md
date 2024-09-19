@@ -72,13 +72,18 @@ See: https://rpmfusion.org/Howto/Multimedia for more
 
 ### Blue Yeti Mic
 
+Unfortunately, on boot, this USB mic does not get recognised initially. Have tried:
+- enabling ErP
+- disabling power management for USB devices ("wake on sleep")
+
+After unplugging-replugging, I have to flip the setting from and back to the below, because the input after the
+initial 'unplug and replug' sounds really clipped - it's very weird behaviour
+
+![image](https://github.com/user-attachments/assets/36859800-1911-419d-8d20-cae25c28a860)
+
 Had to set the Blue Yeti microphone to `Digital Stereo Duplex (IEC958)` to get this to behave properly.
 
 See: https://www.reddit.com/r/linuxaudio/comments/14i9du1/issue_with_blue_yeti_audio_in_fedora/ for more
-
-Had to set the microphone up like this in `Sound`:
-
-![image](https://github.com/user-attachments/assets/36859800-1911-419d-8d20-cae25c28a860)
 
 Used `PulseAudio` to adjust microphone settings further (volume)
 
