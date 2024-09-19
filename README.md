@@ -86,5 +86,6 @@ Used `PulseAudio` to adjust microphone settings further (volume)
 
 Occasionally, `krunner` will crash...
 
-This workaround will restart `krunner` when it crashes: https://github.com/kpostekk/krunner-restarter 
+This workaround will restart `krunner` when it crashes: https://github.com/jake-does-dev/krunner-restarter-fedora
+Forked from: https://github.com/kpostekk/krunner-restarter 
 
