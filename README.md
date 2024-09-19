@@ -82,4 +82,9 @@ Had to set the microphone up like this in `Sound`:
 
 Used `PulseAudio` to adjust microphone settings further (volume)
 
+### `krunner` crashing
+
+Occasionally, `krunner` will crash...
+
+This workaround will restart `krunner` when it crashes: https://github.com/kpostekk/krunner-restarter 
 
