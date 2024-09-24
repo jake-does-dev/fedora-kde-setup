@@ -70,7 +70,42 @@ sudo dnf install libva-nvidia-driver.{i686,x86_64}
 
 See: https://rpmfusion.org/Howto/Multimedia for more
 
-### Blue Yeti Mic
+### Configure Focusrite Scarlett Solo
+
+Followed the pre-requisites here: https://github.com/geoffreybennett/alsa-scarlett-gui/blob/master/docs/INSTALL.md
+
+```
+sudo dnf -y install alsa-lib-devel gtk4-devel openssl-devel
+```
+
+Then, installed (via the RPM packages available at the below links):
+- the GUI: https://github.com/geoffreybennett/alsa-scarlett-gui/releases
+- the latest firmware: https://github.com/geoffreybennett/scarlett2-firmware/releases
+
+For my condenser microphone (AT2020), 48V power is required for the microphone to work - ensure this is enabled
+
+### EasyEffects
+
+Available from the Software Centre
+
+Includes a variety of helpful tools that integrate with PulseAudio for microphone control - like de-esser, de-popper, noise gate, etc.
+
+Implemented a simple rule that includes a Noise Reduction gate, and have put this into its own preset.
+
+### `krunner` crashing
+
+Occasionally, `krunner` will crash...
+
+This workaround will restart `krunner` when it crashes: https://github.com/jake-does-dev/krunner-restarter-fedora
+Forked from: https://github.com/kpostekk/krunner-restarter 
+
+### Amend SDDM (log on behaviours)
+
+`System Settings -> Colors & Themes -> Login Screen (SDDM) -> Behavior...`
+
+## 💤 Previous steps that are no longer required 💤
+
+### Blue Yeti Mic (moved to Focusrite Scarlett Solo 4th Gen)
 
 Do the following in the BIOS:
 - enabling ErP
@@ -86,14 +121,3 @@ Had to set the Blue Yeti microphone to `Digital Stereo Duplex (IEC958)` to get t
 See: https://www.reddit.com/r/linuxaudio/comments/14i9du1/issue_with_blue_yeti_audio_in_fedora/ for more
 
 Used `PulseAudio` to adjust microphone settings further (volume)
-
-### `krunner` crashing
-
-Occasionally, `krunner` will crash...
-
-This workaround will restart `krunner` when it crashes: https://github.com/jake-does-dev/krunner-restarter-fedora
-Forked from: https://github.com/kpostekk/krunner-restarter 
-
-### Amend SDDM (log on behaviours)
-
-`System Settings -> Colors & Themes -> Login Screen (SDDM) -> Behavior...`
