@@ -82,7 +82,7 @@ Then, installed (via the RPM packages available at the below links):
 - the GUI: https://github.com/geoffreybennett/alsa-scarlett-gui/releases
 - the latest firmware: https://github.com/geoffreybennett/scarlett2-firmware/releases
 
-For my condenser microphone (AT2020), 48V power is required for the microphone to work - ensure this is enabled
+For my condenser microphone (AT2020), 48V power is required for the microphone to work - ensure this is enabled (press the button).
 
 ### EasyEffects
 
@@ -102,6 +102,14 @@ Forked from: https://github.com/kpostekk/krunner-restarter
 ### Amend SDDM (log on behaviours)
 
 `System Settings -> Colors & Themes -> Login Screen (SDDM) -> Behavior...`
+
+### Firefox
+
+Can appear a little small on Linux
+
+Fix this by going to `about:config` in the address bar, and amending the setting called `layout.css.devPixelsPerPx`:
+![image](https://github.com/user-attachments/assets/1ce4d77c-0ea2-46fc-ab9a-1863f5d3b868)
+
 
 ## 💤 Previous steps that are no longer required 💤
 
