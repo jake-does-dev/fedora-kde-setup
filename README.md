@@ -110,6 +110,12 @@ Can appear a little small on Linux
 Fix this by going to `about:config` in the address bar, and amending the setting called `layout.css.devPixelsPerPx`:
 ![image](https://github.com/user-attachments/assets/1ce4d77c-0ea2-46fc-ab9a-1863f5d3b868)
 
+### Visual Studio Code was blurry
+
+```
+alias code="code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto"
+```
+
 
 ## 💤 Previous steps that are no longer required 💤
 
