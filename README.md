@@ -120,6 +120,13 @@ alias code="code --enable-features=UseOzonePlatform,WaylandWindowDecorations --o
 
 Xbox Controller setup, follow: https://github.com/medusalix/xone
 
+### Address slightly poppy audio
+
+```
+sudo grubby --args="preempt=full" --update-kernel=ALL
+```
+
+See: https://wiki.linuxfoundation.org/realtime/documentation/technical_basics/preemption_models
 
 ## 💤 Previous steps that are no longer required 💤
 
