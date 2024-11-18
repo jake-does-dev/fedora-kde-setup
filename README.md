@@ -116,6 +116,10 @@ Fix this by going to `about:config` in the address bar, and amending the setting
 alias code="code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto"
 ```
 
+### `xone`
+
+Xbox Controller setup, follow: https://github.com/medusalix/xone
+
 
 ## 💤 Previous steps that are no longer required 💤
 
