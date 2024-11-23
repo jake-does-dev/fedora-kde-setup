@@ -128,6 +128,17 @@ sudo grubby --args="preempt=full" --update-kernel=ALL
 
 See: https://wiki.linuxfoundation.org/realtime/documentation/technical_basics/preemption_models
 
+### SteamVR
+
+I wasn't able to get SteamVR going for a while... got an error 496, saying that SteamVR was unable to get the DRM lease.
+
+It seemed to have 'fixed itself' when I tried to launch SteamVR, it wouldn't work, but then I went into the software menu to 'Reset Headset'.
+When I did this, my PC froze and I had to hard restart... but afterwards, everything started working again!
+
+TODO:
+- need to actually see if I can get the lighthouses to be recognised - they should be, but might need to force turn them on for their initial run (by unplugging and re-plugging).
+- KDE regression causes lag in DE, see bug and fix here: https://bugs.kde.org/show_bug.cgi?id=495400, https://invent.kde.org/plasma/kwin/-/merge_requests/6756 - need to wait for release, probably KWin 6.2.4.
+
 ## 💤 Previous steps that are no longer required 💤
 
 ### Blue Yeti Mic (moved to Focusrite Scarlett Solo 4th Gen)
