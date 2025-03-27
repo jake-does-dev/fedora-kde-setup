@@ -120,6 +120,10 @@ alias code="code --enable-features=UseOzonePlatform,WaylandWindowDecorations --o
 
 Xbox Controller setup, follow: https://github.com/medusalix/xone
 
+### Guitar Hero Controller
+
+Follow: https://github.com/medusalix/xpad-noone
+
 ### Address slightly poppy audio
 
 ```
