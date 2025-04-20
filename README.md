@@ -116,6 +116,13 @@ Fix this by going to `about:config` in the address bar, and amending the setting
 alias code="code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto"
 ```
 
+### HeroicGamesLauncher
+
+Very good launcher that collates most non-Steam launchers into one app.
+
+Can also enable MangoHud via: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues/2218#issuecomment-2424283741
+Can copy the MangoHud config from ~/.config/MangoHud/MangoHud.conf to ~/.var/app/com.heroicgameslauncher.hgl/config/MangoHud
+
 ### `xone`
 
 Xbox Controller setup, follow: https://github.com/medusalix/xone
@@ -142,6 +149,7 @@ When I did this, my PC froze and I had to hard restart... but afterwards, everyt
 TODO:
 - need to actually see if I can get the lighthouses to be recognised - they should be, but might need to force turn them on for their initial run (by unplugging and re-plugging).
 - KDE regression causes lag in DE, see bug and fix here: https://bugs.kde.org/show_bug.cgi?id=495400, https://invent.kde.org/plasma/kwin/-/merge_requests/6756 - need to wait for release, probably KWin 6.2.4.
+
 
 ## 💤 Previous steps that are no longer required 💤
 
